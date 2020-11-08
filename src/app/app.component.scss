@@ -1,0 +1,27 @@
+@import '../styles.scss';
+
+.nav-item{
+  a{
+    color: #f795ac;
+    margin: 30px;
+    &:hover{
+      color: white;
+    }
+    @include breakpoint("max-width:475px") {
+      margin: 10px;
+    }
+  }
+}
+
+.footer{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #f795ac;
+  a{
+    color: #f795ac;
+    &:hover{
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@import '../../styles.scss';
+
+.bannerPrincipal{
+  img{
+    @include breakpoint("max-width:475px") {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.holderImagen{
+  @include breakpoint("max-width:475px") {
+    text-align: center !important;
+  }
+  img{
+    height: 375px;
+    @include breakpoint("max-width:475px") {
+      height: 250px;
+    }
+  }
+}
+
+.holderTexto{
+  padding-top: 60px;
+  @include breakpoint("max-width:475px") {
+    text-align: center !important;
+  }
+}
+
+.holderPoliticas{
+  margin: 0 auto;
+  width: 750px;
+  height: 400px;
+  overflow: overlay;
+  padding-right: 40px;
+  @include breakpoint("max-width:475px") {
+    width: 100%;
+  }
+}
+
+.margenEspacio{
+  margin-top: 100px;
+  margin-bottom: 150px;
+  @include breakpoint("max-width:475px") {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+.segundoPaso{
+  @include breakpoint("max-width:475px") {
+    flex-direction: column-reverse;
+  }
+
+}
+
+#politicas{
+  h1{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
